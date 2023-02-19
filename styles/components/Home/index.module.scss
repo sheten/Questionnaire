@@ -1,0 +1,9 @@
+@use '/styles/abstracts/' as *;
+
+.wrap {
+  align-items: center;
+  margin: auto;
+  min-height: 100vh;
+  justify-content: space-between;
+  @include flexColumn;
+}

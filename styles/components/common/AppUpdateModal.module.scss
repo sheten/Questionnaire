@@ -1,0 +1,40 @@
+@use '/styles/abstracts/' as *;
+
+.headerWrap {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: $XL_FONT_SIZE;
+  font-weight: $BOLD;
+  text-align: center;
+}
+.subtitle{
+  font-size: $M_FONT_SIZE;
+}
+
+.updates{
+  @include flexColumn;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  margin-top: $L_SPACING;
+  overflow: auto;
+  width: 100%;
+}
+.change {
+  display: flex;
+  margin: $M_SPACING 0;
+}
+
+.label {
+  color: $PRIMARY_COLOR;
+  font-size: $XL_FONT_SIZE;
+  margin: $L_SPACING 0px;
+}
+.bubble{
+  align-items: center;
+  display: flex;
+  font-size: $M_FONT_SIZE;
+  margin-right: $S_SPACING;
+  padding: $XS_SPACING;
+}

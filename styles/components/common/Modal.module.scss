@@ -1,0 +1,100 @@
+@use '/styles/abstracts/' as *;
+
+// LAYOUT
+.layoutWrap {
+  display: flex;
+  z-index: 3;
+}
+
+.childCore {
+  @include flexColumn;
+  align-items: center;
+  background-color: $SECONDARY_COLOR;
+  border-radius: $M_BORDER_RADIUS;
+  border: 2px solid $PRIMARY_COLOR;
+  font-size: $M_FONT_SIZE;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 3;
+}
+
+.large {
+  box-sizing: border-box;
+  max-height: 90%;
+  left: calc(50% - 330px / 2);
+  padding: $L_SPACING;
+  top: calc(5% - $L_SPACING);
+  width: 330px;
+}
+
+.default {
+  height: 130px;
+  left: calc(50% - (300px + $L_SPACING * 2) / 2);
+  padding: $M_SPACING;
+  top: calc(50% - 130px / 2);
+  width: 300px;
+}
+
+.backgroundWrap {
+  background-color: $SECONDARY_COLOR;
+  bottom: 0;
+  cursor: pointer;
+  height: 100%;
+  opacity: 0.4;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+
+// GENERAL
+.closeIcon {
+  cursor: pointer;
+  font-size: $L_FONT_SIZE;
+  left: $M_SPACING;
+  position: absolute;
+  top: $M_SPACING;
+}
+
+.form{
+  @include flexColumn;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.title {
+  font-weight: $BOLD;
+}
+
+.description {
+  color: $PRIMARY_COLOR;
+}
+
+.input {
+  @include defaultInput;
+  width: 100%;
+}
+
+.button {
+  @include defaultButton;
+}
+
+.buttonsWrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.confirmButton {
+  @include defaultButton;
+  background-color: $PRIMARY_COLOR;
+  border: none;
+  color: $SECONDARY_COLOR;
+}
+
+.dangerous {
+  border: 2px solid rgb(139, 40, 40);
+}

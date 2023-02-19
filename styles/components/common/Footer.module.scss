@@ -1,0 +1,35 @@
+@use '/styles/abstracts/' as *;
+
+.wrap {
+  background-color: $SECONDARY_COLOR;
+  display: flex;
+  height: $M_HEIGHT;
+  position: relative;
+  width: 100%;
+}
+
+.linksWrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  :last-child {
+    border-right: none;
+  }
+}
+
+.link {
+  @include fullCenter;
+  border-right: 2px solid $PRIMARY_COLOR;
+  border-top: 2px solid $PRIMARY_COLOR;
+  color: $TERTIARY_COLOR;
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  font-size: $XXL_FONT_SIZE;
+  text-decoration: none;
+}
+
+.activeLink {
+  color: $PRIMARY_COLOR;
+}

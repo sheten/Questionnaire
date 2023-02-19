@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+html,
+body {
+  background-color: #4A4A4A;
+  color: white;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+};
+
+@media screen and (min-width: 480px) {
+  html,
+  body {
+    background-color: lightgreen;
+    align-items: center;
+    display: flex;
+    flex: 1;
+    width: 900px;
+    height: 2000px;
+  }
+}

@@ -1,0 +1,33 @@
+@use '/styles/abstracts/' as *;
+
+.wrap {
+  background-color: $SECONDARY_COLOR;
+  border-bottom: 2px solid $PRIMARY_COLOR;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.innerWrap {
+  align-items: center;
+  color: $PRIMARY_COLOR;
+  display: flex;
+  font-size: $XXL_FONT_SIZE;
+  height: $M_HEIGHT;
+  justify-content: space-between;
+  max-width: $TABLET_SIZE_THRESHOLD;
+  width: 100%;
+}
+
+.logoWrapper {
+  position: relative;
+  height: calc($M_HEIGHT - 10px);
+  width: 50px;
+}
+
+.userIconWrap {
+  cursor: pointer;
+  display: flex;
+  font-size: $XXL_FONT_SIZE;
+  margin-right: $M_SPACING;
+}

@@ -1,0 +1,48 @@
+@use '/styles/abstracts/layout' as *;
+@use '/styles/abstracts/theme' as *;
+
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin fullCenter {
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin defaultButton {
+  background: $SECONDARY_COLOR;
+  border-radius: $M_BORDER_RADIUS;
+  border: 2px solid $PRIMARY_COLOR;
+  color: $PRIMARY_COLOR;
+  cursor: pointer;
+  font-size: $S_FONT_SIZE;
+  font-weight: $BOLD;
+  padding: $M_SPACING $L_SPACING;
+  text-transform: uppercase;
+  
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+@mixin defaultInput {
+  background: $PRIMARY_COLOR;
+  border-radius: $M_BORDER_RADIUS;
+  border: 2px solid $PRIMARY_COLOR;
+  box-sizing: border-box;
+  color: $WHITE_COLOR;
+  display: flex;
+  height: 36px;
+  margin: $S_SPACING 0;
+  padding: $M_SPACING;
+
+  &:focus {
+    color: $WHITE_COLOR;
+  }
+
+  &::placeholder {
+    color: $SECONDARY_COLOR;
+  }
+}

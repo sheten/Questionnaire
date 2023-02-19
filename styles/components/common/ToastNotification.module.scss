@@ -1,0 +1,34 @@
+@use '/styles/abstracts/' as *;
+
+.childCore {
+  @include flexColumn;
+  align-items: center;
+  background-color: #2EC20A;
+  border-radius: $M_BORDER_RADIUS;
+  color: $SECONDARY_COLOR;
+  display: flex;
+  flex-direction: row;
+  font-size: $M_FONT_SIZE;
+  height: 30px;
+  left: calc(50% - (300px + $S_SPACING * 2) / 2);
+  padding: $S_SPACING;
+  position: fixed;
+  top: $S_SPACING;
+  width: 280px;
+  z-index: 3;
+}
+
+.iconWrap {
+  align-items: center;
+  display: flex;
+  font-size: $XL_FONT_SIZE;
+  margin-right: $M_SPACING;
+}
+
+.error {
+  background-color:#8b2828;
+}
+
+.warning {
+  background-color:#FBB124;
+}
